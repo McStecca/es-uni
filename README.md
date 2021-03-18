@@ -1,3 +1,6 @@
-# UniPD exercises
-## Dumpster of my exercises
+## UniPD exercises
+**first year, p1**
+
+**Dumpster of my exercises**
+
 All commented tho
