@@ -1,21 +1,21 @@
 #include<iostream>
 using namespace std;
 
-int leggi(int*X, int dimX){
+int leggi(int*X, int dimX){//gets the input
     int n;
     do{
-        cin >> n;
-    } while (!(n < dimX));
+        cin >> n;//dimension of the array
+    } while (!(n < dimX));//dimension must be <30
 
     for (int i = 0; i < n; i++)
     {
-        cin >> X[i];
+        cin >> X[i];//every array single element
     }
     return n;
 };
 
 
-void stampa(int*X, int lim){
+void stampa(int*X, int lim){//prints the array
     for (int i = 0; i < lim; i++){
         cout << X[i] << " ";
     }
@@ -23,16 +23,16 @@ void stampa(int*X, int lim){
 };
 
 
-void sort(int*X, int lim){
+void sort(int*X, int lim){//sorting algorithm 😳
     int temp;
     for (int i = 1; i < lim; i++){
-        if(X[0]!=X[i]){
+        if(X[0]!=X[i]){//if this element is different from element in first position
             for (int j = lim-1; j > i; j--){
-                if(X[j] != X[i]){
+                if(X[j] != X[i]){//search an element equal to the element in first position
                     temp = X[i];
                     X[i] = X[j];
-                    X[j] = temp;
-                    break;
+                    X[j] = temp;//swaps the two elements
+                    break;//exits the for
                 }
             }
         }
